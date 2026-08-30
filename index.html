@@ -363,6 +363,8 @@ const EV=[
  {t:"11:20",arr:700,end:715,name:"續航力／陸上行舟",store:"",venue:"heping",loc:"和平籃球館 1樓",
  detail:"11:30–11:35（賽前10分報到）積分賽",need:"5",note:"",
  people:[{n:"林彥穎",s:"中平"},{n:"吳冠靜",s:"副都心"},{n:"許文南",s:"中原"},{n:"邵禹傑",s:"中原"},{n:"洪琬婷",s:"中原"}]},
+ {t:"11:20",arr:805,end:718,name:"靜態挑戰類／睡眠比賽",store:"",venue:"daan",loc:"大安運動中心 2F 多功能教室4",
+ detail:"11:30-11:50（賽前10分報到）（第4組）",need:"1",note:"",people:[{n:"戴崇逸",s:"頭前"}]},
  {t:"11:42",arr:707,end:722,name:"100公尺（男）",store:"",venue:"track",loc:"國北教 田徑場",
  detail:"11:57 前報到（第5組）",need:"1",note:"",people:[{n:"李書府",s:"副都心"}]},
  {t:"11:42",arr:725,end:740,name:"100公尺（女）",store:"",venue:"track",loc:"國北教 田徑場",
@@ -609,8 +611,8 @@ const FOOD=[
   lines:["<b>輕食</b>：一之軒、小木屋鬆餅、頂呱呱","<b>飲品</b>：清心、龜記、50嵐"]},
 ];
 function renderMore(){
-  let h=`<a class="manual" href="https://canva.link/ds79yt1rhhhjz4l" target="_blank" rel="noopener" style="margin:8px 0 0">📖 當天完整說明手冊（規則・地圖・餐飲）</a>`;
-  h+=`<div class="mhead">🎮 加分挑戰賽 <span class="sub">現場自由參加・行程有空就來玩</span></div>`;
+  <!--let h=`<a class="manual" href="https://canva.link/ds79yt1rhhhjz4l" target="_blank" rel="noopener" style="margin:8px 0 0">📖 當天完整說明手冊（規則・地圖・餐飲）</a>`;-->
+  h=`<div class="mhead">🎮 加分挑戰賽 <span class="sub">現場自由參加・行程有空就來玩</span></div>`;
   h+=`<div class="mintro">全部在 <b>和平籃球館 1F</b>，時間 10:30–14:30，隨到隨玩，還能幫團隊加分！${locLink({venue:"heping"})}</div>`;
   h+=GAMES.map(g=>`<div class="gcard">
     <div class="gn">${g.n}</div><div class="gloc">📍 ${g.loc}</div>
