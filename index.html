@@ -627,6 +627,7 @@ function renderMore(){
     ${f.lines.map(l=>`<div class="fline">${l}</div>`).join("")}
     ${f.img&&window[f.img]?`<img class="fdmap" src="${window[f.img]}" alt="${f.venue} 位置圖"><div class="fdmap-cap">▲ ${f.venue} 攤位位置圖</div>`:""}</div>`).join("");
   h+=`<div class="mintro">大安運動中心的球類／技能賽夥伴，餐飲請至和平籃球館 2F 或國北教田徑場攤位領取；詳細位置圖請見上方說明手冊。</div>`;
+  h+=`<div class="mintro">🥤 補給站：水、運動飲料、堅果、能量棒；請自備環保杯。</div>`;
   document.getElementById("moreResult").innerHTML=h;
 }
 function locLink(e){ return `<a class="navlink" href="${navUrl(e.venue)}" target="_blank" rel="noopener">🧭 導航</a>`; }
