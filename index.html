@@ -406,7 +406,7 @@ const same=(a,b)=> a===b || (a.length>=2&&b.length>=2&&(a.indexOf(b)>=0||b.index
 
 /* ============ 名單解析（自動更新用）============ */
 /*const STORES=["中三區","復興","大國","大園","心高","彰化","彰美","湖濱","中正","國光","心興","大興","大芳","高工","公園"];*/
-const STORES=["業十二區","中平","新泰","副都心","國中"];
+const STORES=["業十二區","新捷","重劃","頭前","幸福","中平","新泰","副都心","國中","總站","中原","民安","民西","丹鳳","新莊"];
 function parseRoster(cell, fb){
   cell=(cell||"").trim();
   if(!cell) return {forfeit:false,people:[]};
@@ -671,7 +671,7 @@ function doSearch(keep){
       <div class="cname">${e.name}</div>
       <div class="cmeta"><span class="loc">📍 ${e.loc}</span>　${locLink(e)}</div>
       <div class="cmeta">🕐 ${e.detail}</div>
-	  ${me&&me.s?`<div class="cmeta">👤 代表：${me.s}</div>`:""}
+	  <!--${me&&me.s?`<div class="cmeta">👤 代表：${me.s}</div>`:""}-->
       ${me&&me.note?`<div class="pnote">※ ${me.note}</div>`:""}
       ${(flags[i]||[]).map(f=>`<div class="flag ${f.lv}"><span class="ic">${f.lv==="hard"?"⚠":"⏱"}</span><span>${f.msg}</span></div>`).join("")}
       ${rulesHTML(e)}${extrasHTML(e)}
